@@ -43,8 +43,71 @@
     // let n1 = parseInt(prompt("Digite um nº"));
     // let contador = 0;
     // while(contador<=n1){
-        
+    //     console.log(contador);
+    //     contador ++
     // } 
+
+    // let n1 = parseInt(prompt("Digite um nº!"));
+    // if(n1%2 == 0 ){
+    //     document.write("Esse número é par")
+    // } else {document.write("Esse número é ímpar")}
+
+    // let idade = parseInt(prompt("Qual sua idade?"));
+    // if (idade <= 18){
+    //     document.write("Você é menor de idade");
+    // } else{document.write("Você é maior de idade");}
+
+    // let nota1 = parseInt(prompt("Valor da 1º nota"));
+    // let nota2 = parseInt(prompt("Valor da 2º nota"));
+    // let nota3 = parseInt(prompt("Valor da 3º nota"));
+    // let media = (nota1+nota2+nota3)/3;
+    // if (media >=7 ){
+    //     document.write("Sua média foi: "+media+"!");
+    //     document.write("Você passou!");
+    // } else{
+    //     document.write("Sua média foi: "+media+"!");
+    //     document.write("Você reprovou!");}
+
+    // let n1 = parseInt(prompt("Digite um número"));
+    // while(n1 >= 0 ){
+    //     console.log(n1);
+    //     n1--
+    // }
+
+    // let n1 = parseInt(prompt("Digite um número"));
+    // if (n1 == 0 ){
+    //     document.write("Este número é o zéro 0");
+    // }
+    // if(n1%2 == 0){
+    //     document.write("Este número é par")
+    // } else { document.write("Este número é ímpar")}
+
+    // let senha;
+    // while(senha != "1234"){             //senha diferente de "1234"
+    //     senha = prompt("Digite a senha");
+    // }
+
+    const lista_num = []
+    for(let i=1;i<=5;i++){
+        const input = prompt(`Digite o ${i} número ou cancele para sair: `);
+
+        if(input === null){
+            alert("Operação cancelada!")
+            break;
+        }
+        const num = Number(input);
+
+        if(isNaN(num)){
+            alert("Digite um número válido")
+            i--;
+            continue;
+        }else{
+            //Dobra número
+            lista_num.push(num*2);
+        }
+    }
+
+    console.log(lista_num)
 
 </script>
 </html>
